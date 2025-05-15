@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Button, Text } from "@chakra-ui/react";
 import { useAuth } from "../context/AuthContext";
+
 const UserProfile: React.FC = () => {
   const { user, logout } = useAuth();
   return (
