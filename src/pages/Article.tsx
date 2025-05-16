@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Routes, Route, Link } from "react-router-dom";
 import { Box, Heading, Text } from "@chakra-ui/react";
+
 const Article: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   return (

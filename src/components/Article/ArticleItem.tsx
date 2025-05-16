@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 interface ArticleItemProps {
   id: number;
   title: string;
-  summary: string;
+  summary?: string;
 }
+
 const ArticleItem: React.FC<ArticleItemProps> = ({ id, title, summary }) => {
   return (
     <Box p={4} shadow="md" borderWidth="1px" mb={4}>

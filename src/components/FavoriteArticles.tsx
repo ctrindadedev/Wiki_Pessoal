@@ -60,6 +60,7 @@ const FavoriteArticles: React.FC = () => {
       </ul>
       <Button
         mt={4}
+        mb={4}
         colorScheme="teal"
         onClick={() => addFavorite({ id: 1, title: "React comTypeScript" })}
       >

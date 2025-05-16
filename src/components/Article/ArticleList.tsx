@@ -1,5 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import ArticleItem from "./ArticleItem";
+
 // Função para simular a chamada de API para obter o resumo
 const fetchSummary = async (title: string) => {
   // Simulação de uma chamada de API
