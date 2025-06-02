@@ -29,8 +29,9 @@ const favoritesReducer = (
   }
 };
 
+//Usando a função reducer
 const FavoriteArticles: React.FC = () => {
-  // Inicializando o useReducer com o reducer e um estado in cial (lista vazia)
+  // Inicializando o useReducer com o reducer e um estado inicial (lista vazia)
   const [favorites, dispatch] = useReducer(favoritesReducer, []);
   // Função para adicionar um artigo aos favoritos
   const addFavorite = (article: Article) => {
@@ -40,6 +41,7 @@ const FavoriteArticles: React.FC = () => {
   const removeFavorite = (articleId: number) => {
     dispatch({ type: "REMOVE_FAVORITE", articleId });
   };
+
   return (
     <Box>
       <Text fontWeight="bold">Artigos Favoritos</Text>

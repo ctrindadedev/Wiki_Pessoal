@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import React, { createContext, useState, useContext } from "react";
+
 // Definindo o tipo para o contexto de autenticação
 interface AuthContextType {
   user: string | null;
@@ -7,6 +8,7 @@ interface AuthContextType {
   logout: () => void;
 }
 
+//Tipo para o provider
 interface AuthProviderProps {
   children: ReactNode;
 }
