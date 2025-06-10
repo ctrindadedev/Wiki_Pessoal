@@ -12,6 +12,7 @@ interface Autor {
   author: AutorPros;
 }
 
+
 //Componente que receba um array de objetos como prop
 
 const Autoritem: React.FC<Autor> = ({ author }) => {

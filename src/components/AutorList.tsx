@@ -10,7 +10,7 @@ const AutorList = () => {
     },
     {
       nome: "José Silva",
-      artigos: ["Java com springboot"],
+      artigos: ["Java com springboot", "React com TypeScript"],
       anonascimento: 2000,
     },
   ];

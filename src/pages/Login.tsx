@@ -9,6 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+
 const Login: React.FC = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
@@ -18,6 +19,7 @@ const Login: React.FC = () => {
     username?: string;
     password?: string;
   }>({});
+
   const handleLogin = () => {
     const validationErrors: { username?: string; password?: string } = {};
     if (username.trim() === "") {

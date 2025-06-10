@@ -1,9 +1,8 @@
 import React from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
-import ArticleList from "../components/Article/ArticleList";
+import ArticleList from "../components/ArticleList";
 import SearchBar from "../components/SearchBar";
-import FavoriteArticles from "../components/FavoriteArticles";
-import AutorList from "../components/Autor/AutorList";
+import AutorList from "../components/AutorList";
 
 const Home: React.FC = () => {
   return (
@@ -14,7 +13,6 @@ const Home: React.FC = () => {
       <Text mb={4}>Pesquise e visualize seus artigos favoritos!</Text>
       <SearchBar />
       <ArticleList />
-      <FavoriteArticles />
       <Text mb={4}>Pesquise e visualize seus autores favoritos!</Text>
       <SearchBar />
       <AutorList />
