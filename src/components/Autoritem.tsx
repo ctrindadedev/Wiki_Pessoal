@@ -1,17 +1,6 @@
 import { Box, Text, Stack } from "@chakra-ui/react";
 import React from "react";
-
-//Interface complexa
-interface AutorPros {
-  nome: string;
-  artigos: string[];
-  anonascimento: number;
-}
-
-interface Autor {
-  author: AutorPros;
-}
-
+import type { Autor } from "../service/types";
 
 //Componente que receba um array de objetos como prop
 

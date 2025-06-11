@@ -1,17 +1,5 @@
-import type { ReactNode } from "react";
 import React, { createContext, useState, useContext } from "react";
-
-// Definindo o tipo para o contexto de autenticação
-interface AuthContextType {
-  user: string | null;
-  login: (username: string) => void;
-  logout: () => void;
-}
-
-//Tipo para o provider
-interface AuthProviderProps {
-  children: ReactNode;
-}
+import type { AuthContextType, AuthProviderProps } from "../service/types";
 
 // Criando o contexto com um valor padrão para armanezar e compartilhar as informações de autenticação
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
